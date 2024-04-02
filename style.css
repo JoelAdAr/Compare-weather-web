@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overscroll-behavior: none;
+    height: 100vh;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 120%;
+    background-image: url('wolfgang-hasselmann-bR_-gllg7Bs-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em; 
+}
+
+.card .weather {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    justify-content: space-between; 
+}
+
+.card-city1, .card-city2 {
+    background-color: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: calc(50% - 1em); 
+    max-width: 620px;
+    margin: 0.5em;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 25%;
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    background: #4c4c4c6b;
+}
+
+button:hover {
+    background: #7c7c7c;
+    cursor: pointer;
+}
+
+input.search-bar {
+    margin-top: 1em; 
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 18px;
+    background-color: #7676762b;
+    font-family: inherit;
+    font-size: 120%;
+    color: white;
+    width: calc(100% - 48px);
+}
